@@ -1,0 +1,11 @@
+//distance travelled by object
+#include<stdio.h>
+main()
+{
+	float u,t, a, d;
+	printf("enter intialvalocity(u),time(t),acceleration(a)");
+	scanf("%f%f%f",&u,&t,&a);
+	d=u*t+1/2*a*t*t;
+	printf("distance travelled is %0.2f\n",d);
+	scanf("%f",&d);
+}
