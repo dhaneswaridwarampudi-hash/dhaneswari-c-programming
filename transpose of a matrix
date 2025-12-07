@@ -1,0 +1,33 @@
+//transpose of a matrix
+#include<stdio.h>
+main()
+{
+	int a[10][10], t[10][10];
+	int r, c,i, j;
+	printf("enter no.of rows & column's");
+	scanf("%d%d",&r,&c);
+	printf("enter %d element's",r*c);
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<r;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+		t[i][j]=a[i][j];
+		}
+	}
+	printf("the transpose matrix is \n");
+	for(i=0;i<c;i++)
+	{
+		for(j=0;j<r;j++)
+		{
+			printf("%d\t",t[i][j]);
+		}
+		printf("\n");
+	}
+}
