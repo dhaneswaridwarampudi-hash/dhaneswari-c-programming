@@ -1,0 +1,17 @@
+//Write a C program to input two numbers from user and find their power
+#include <stdio.h>
+#include <math.h> // Required for the pow() function
+int main()
+{
+    double base, exponent, result;
+    // Prompt the user to enter the base number
+    printf("Enter the base number");
+    scanf("%lf", &base);
+    // Prompt the user to enter the exponent
+    printf("Enter the exponent");
+    scanf("%lf", &exponent);
+    // Calculate the power using the pow() function
+    result = pow(base, exponent);
+    // Display the result
+    printf("%.2lf raised to the power of %.2lf is = %.2lf\n", base, exponent, result);
+}
