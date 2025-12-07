@@ -1,0 +1,11 @@
+//program to find total marks using array
+#include<stdio.h>
+main()
+{
+	int marks[6]={98,95,96,95,94,54};
+	int i;
+	for(i=0;i<=5;i++)
+	{
+		printf("%d\n",marks[i]);
+	}
+}
