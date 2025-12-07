@@ -1,0 +1,14 @@
+//conversion of fahrenheat to celsius and vice versa
+#include<stdio.h>
+main()
+{
+	float c,f,newf,newc;
+	printf("enter temp in celsius");
+	scanf("%f",&c);
+	newf=c*1.8+32;
+	printf("the temp in fahrenheat is %0.2f\n,newf");
+	printf("enter temp in fahrenheat");
+	scanf("%f",&f);
+	newf=(f-32)/1.8;
+	printf("the temp in celsius is %0.2f\n,newc");
+}
