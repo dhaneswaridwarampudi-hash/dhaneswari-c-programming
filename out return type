@@ -1,0 +1,16 @@
+//Funtion with argument and without return type
+#include<stdio.h>
+void addition(int,int);
+main()
+{
+	int a,b;
+	printf("enter 2 dunbers");
+	scanf("%d%d",&a,&b);
+	addition(a,b); //actual argumat
+}
+void addition (int x, int y)  //formal orgumat
+{
+	int c;
+	c=x+y;
+	printf("the reult is %d",c);
+}
