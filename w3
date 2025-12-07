@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+	int a,b,sum;
+	float average;
+	//promt the user to enter the first integer
+	printf("enter the first integer");
+	//read the first integer from the user
+	scanf("%d",&a);
+	//promt the user to enter the second integer
+	printf("enter the second integer");
+	//read the second integer from the user
+	scanf("%d",&b);
+	//calculate the sum
+	sum=a+b;
+	//calculate the average. cast sum to float to ensure floating-point division.
+	average=(float)sum/2;
+	//print the sum
+	printf("the sum of %d and %d is %d\n",a,b,sum);
+	//print the average, formatted to two decimal places
+	printf("the average of %d and %d is %.2f\n",a,b,average);
+}
