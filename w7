@@ -1,0 +1,14 @@
+//Program to find Maximum and minimum of two numbers without using any loop or condition
+#include <stdio.h>
+#include <stdlib.h>
+//for abs()
+int main() 
+{
+	int x,y ;
+    printf("enter two value");
+    scanf("%d%d",&x,&y);
+    int max = (x +y + abs(x-y))/2;
+    int min = (x +y - abs(x-y))/2;
+    printf("Maximum number %d\n", max);
+    printf("Minimum number %d\n", min);
+}
