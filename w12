@@ -1,0 +1,25 @@
+//Write a C program to input principle (amount), time and rate (P, T, R) and find Compound Interest.
+#include <stdio.h>
+#include <math.h> // Required for the pow() function
+int main() 
+{
+    double principal, rate, time, compound_interest, amount;
+    // Input principal amount
+    printf("Enter the principal amount");
+    scanf("%lf", &principal);
+    // Input annual interest rate (as a percentage)
+    printf("Enter the annual interest rate (in percentage)");
+    scanf("%lf", &rate);
+    // Input time period (in years)
+    printf("Enter the time period (in years)");
+    scanf("%lf", &time);
+    // Convert rate from percentage to decimal
+    rate = rate / 100.0;
+    // Calculate the total amount using the compound interest formula: A = P * (1 + R)^T
+    amount = principal * pow((1 + rate), time);
+    // Calculate the compound interest: CI = A - P
+    compound_interest = amount - principal;
+    // Display the results
+    printf("\nTotal Amount after Compound Interest: %.2lf\n", amount);
+    printf("Compound Interest: %.2lf\n", compound_interest);
+}
