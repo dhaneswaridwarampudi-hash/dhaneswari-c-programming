@@ -1,0 +1,19 @@
+//Write a C program to input principle, time and rate (P, T, R) from user and find Simple Interest.
+#include <stdio.h>
+int main() 
+{
+    float principal, time, rate, simpleInterest;
+    // Input principal amount
+    printf("Enter the principal amount");
+    scanf("%f", &principal);
+    // Input time period in years
+    printf("Enter the time period in years");
+    scanf("%f", &time);
+    // Input annual interest rate
+    printf("Enter the rate of interest per annum (e.g., 5 for 5%%): ");
+    scanf("%f", &rate);
+    // Calculate simple interest
+    simpleInterest = (principal * time * rate) / 100;
+    // Display the result
+    printf("The Simple Interest is: %.2f\n", simpleInterest);
+}
