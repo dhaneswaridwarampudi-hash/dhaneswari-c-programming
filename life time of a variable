@@ -1,0 +1,15 @@
+//life time of a variable
+#include<stdio.h>
+void display();
+main()
+{
+	int x=2; //local to main
+	printf("the value of x is %d",x);
+	display();
+	printf("the value of y is%d",y);
+}
+void display()
+{
+	int y=3; //local to display
+	printf("the value of y is %d",y);
+}
