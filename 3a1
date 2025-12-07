@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c,d;
+	float r;
+	printf("enter the value of a,b,c,d");
+	scanf("%d%d%d%d",&a,&b,&c,&d);
+	r=a/b*c-b+a*d/3;
+	printf("r value %d",r);
+}
