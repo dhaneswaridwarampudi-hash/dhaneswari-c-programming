@@ -1,0 +1,19 @@
+//Program to swap two numbers using third variable.
+#include<stdio.h>
+main()
+{
+	int a,b,temp;
+	//program used to enter two numbers
+	printf("enter the first number");
+	scanf("%d",&a);
+	printf("enter the second number");
+	scanf("%d",&b);
+	//display the number befor swapping
+	printf("befour swapping a=%d,b=%d\n",a,b);
+	//swaping logic using a third variable (temp)
+	temp=a; //store the value of a in temp
+	a=b;    //assign the value of b in a
+	b=temp; //assign the value stord in temp (orinal a) to b
+	//display the number after swapping
+	printf("after swapping a=%d,b=%d\n",a,b);
+}
