@@ -1,0 +1,17 @@
+/*Complete the C program to convert days into years, month and days.
+ (Ignoring leap year and considering 1 month is 30 days)*/ 
+#include <stdio.h>
+int main() 
+{
+    int totalDays;
+    int years, months, days;
+    printf("Enter the total number of days");
+    scanf("%d",&totalDays);
+    // Calculate years
+    years = totalDays / 365;
+    int remainingDaysAfterYears =totalDays % 365;
+    // Calculate months from the remaining days
+    months = remainingDaysAfterYears / 30;
+    days =remainingDaysAfterYears % 30;
+    printf("Equivalent: %d Years, %d Months, and %d Days\n", years, months, days);
+}
